@@ -5,4 +5,4 @@
 // * An ask input, filled with user's existing bid if applicable
 $(".discussion-sidebar").append('<img src="' + self.options.codesyImgUrl + '"/><form><input type="text" placeholder="5.00" id="offer"/><br/><input type="text" placeholder="500.00" id="ask"/><br/><input type="submit"/>');
 
-$.getJSON('http://codesy.io/bids?url=' + window.location);
+$.getJSON('http://' + self.options.codesyDomain + '/bids?url=' + window.location);

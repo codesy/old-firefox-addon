@@ -15,8 +15,8 @@ Getting Started with Development
 Developing with patronage
 -------------------------
 
-If you are running a local [patronage](https://github.com/codesy/patronage)
-instance, you can direct the add-on to use a local domain like so:
+By default, the add-on communicates with [codesy.io](http://codesy.io). You should use the [dev.codesy.io](http://dev.codesy.io) site while you work on the add-on. You can direct the add-on to use another domain like so:
+
 ```
-cfx run --static-args='{"domain": "localhost"}'
+cfx run --static-args='{"domain": "dev.codesy.io"}'
 ```

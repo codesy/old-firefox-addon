@@ -4,12 +4,13 @@
 // * An offer input, filled with user's existing bid if applicable
 // * An ask input, filled with user's existing bid if applicable
 var html = '<img src="' + self.options.codesyImgUrl + '"/>' +
-    '<form id="codesy">' +
-    '<input type="text" placeholder="offer amount" id="offer"/><br/>' +
-    '<input type="text" placeholder="ask amount" id="ask"/><br/>' +
+    '<form id="codesy" action="https://' + self.options.codesyDomain + '/bids" method="POST">' +
+    '<input type="text" placeholder="offer amount" id="bid_offer" name="bid[offer]"/><br/>' +
+    '<input type="text" placeholder="ask amount" id="bid_ask" name="bid[ask]"/><br/>' +
     '<a class="button minibutton">Bid</a>';
 $(".discussion-sidebar").append(html);
-console.log(self.options);
+$form = $("form#codesy");
+$form.find("a.button").click(function(){
+  $form.submit();
+});
 var bid = $.getJSON('//' + self.options.codesyDomain + '/api/v1/bids.json?url=' + window.location);
-console.log(bid);
-console.debug(bid);

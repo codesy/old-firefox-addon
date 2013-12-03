@@ -3,6 +3,13 @@
 // * Whether the bug has any bids in codesy
 // * An offer input, filled with user's existing bid if applicable
 // * An ask input, filled with user's existing bid if applicable
-$(".discussion-sidebar").append('<img src="' + self.options.codesyImgUrl + '"/><form><input type="text" placeholder="5.00" id="offer"/><br/><input type="text" placeholder="500.00" id="ask"/><br/><input type="submit"/>');
-
-$.getJSON('http://' + self.options.codesyDomain + '/bids?url=' + window.location);
+var html = '<img src="' + self.options.codesyImgUrl + '"/>' +
+    '<form id="codesy">' +
+    '<input type="text" placeholder="offer amount" id="offer"/><br/>' +
+    '<input type="text" placeholder="ask amount" id="ask"/><br/>' +
+    '<a class="button minibutton">Bid</a>';
+$(".discussion-sidebar").append(html);
+console.log(self.options);
+var bid = $.getJSON('//' + self.options.codesyDomain + '/api/v1/bids.json?url=' + window.location);
+console.log(bid);
+console.debug(bid);

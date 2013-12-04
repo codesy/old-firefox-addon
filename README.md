@@ -17,6 +17,6 @@ Developing with codesy.io
 
 By default, the add-on communicates with
 [api.codesy.io](https://api.codesy.io). You should use the
-[codesy.herokuapp.com](https://codesy.herokuapp.com) dev site while you work on
-the add-on. You can direct the add-on to use another domain in the add-on
-preferences.
+[codesy-dev.herokuapp.com](https://codesy-dev.herokuapp.com) dev site while you
+work on the add-on. Configure the add-on to use domain `codesy-dev.herokuapp.com`
+in the add-on preferences.

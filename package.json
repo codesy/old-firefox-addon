@@ -5,5 +5,13 @@
   "description": "codesy is a pay-what-you-want market for the open source community to encourage coders to fix important bugs.",
   "author": "Luke Crouch",
   "license": "MPL 2.0",
-  "version": "1.0"
+  "version": "1.0",
+
+  "preferences": [{
+    "name": "domain",
+    "type": "string",
+    "title": "Domain",
+    "description": "The domain for the codesy back-end service.",
+    "value": "api.codesy.io"
+  }]
 }

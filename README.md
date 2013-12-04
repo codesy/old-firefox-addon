@@ -12,11 +12,11 @@ Getting Started with Development
 3. Fiddle with the code
 4. Run `cfx run` to run an instance of Firefox with your code changes
 
-Developing with patronage
+Developing with codesy.io
 -------------------------
 
-By default, the add-on communicates with [codesy.io](http://codesy.io). You should use the [dev.codesy.io](http://dev.codesy.io) site while you work on the add-on. You can direct the add-on to use another domain like so:
-
-```
-cfx run --static-args='{"domain": "dev.codesy.io"}'
-```
+By default, the add-on communicates with
+[api.codesy.io](https://api.codesy.io). You should use the
+[codesy.herokuapp.com](https://codesy.herokuapp.com) dev site while you work on
+the add-on. You can direct the add-on to use another domain in the add-on
+preferences.

@@ -5,7 +5,7 @@
 // * An ask input, filled with user's existing bid if applicable
 var html = '<hr/>' +
     '<div id="codesy-widget">' +
-    '<img src="' + self.options.codesyImgUrl + '"/>' +
+    '<a href="http://codesy.io" target="_new"><img src="' + self.options.codesyImgUrl + '"/></a>' +
     '<form id="codesy" action="https://' + self.options.codesyDomain + '/bids" method="POST">' +
     '<input type="text" placeholder="offer amount" id="bid_offer" name="bid[offer]"/><br/>' +
     '<input type="text" placeholder="ask amount" id="bid_ask" name="bid[ask]"/><br/>' +

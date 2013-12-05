@@ -7,6 +7,14 @@
   "license": "MPL 2.0",
   "version": "1.0",
 
+  "permissions": {
+    "cross-domain-content": [
+      "https://codesy-dev.herokuapp.com/",
+      "https://codesy-stage.herokuapp.com/",
+      "https://api.codesy.io/"
+    ]
+  },
+
   "preferences": [{
     "name": "domain",
     "type": "string",

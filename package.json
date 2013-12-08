@@ -20,7 +20,7 @@
     "type": "string",
     "title": "Domain",
     "description": "The domain for the codesy back-end service.",
-    "value": "codesy-dev.herokuapp.com"
+    "value": "api.codesy.io"
   },
   {
     "description": "Add codesy to GitHub issues?",

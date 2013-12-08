@@ -20,6 +20,28 @@
     "type": "string",
     "title": "Domain",
     "description": "The domain for the codesy back-end service.",
-    "value": "api.codesy.io"
-  }]
+    "value": "codesy-dev.herokuapp.c"
+  },
+  {
+    "description": "Add codesy to GitHub issues?",
+    "type": "bool",
+    "name": "addTo_GitHub_com_s",
+    "value": true,
+    "title": "Enable GitHub"
+  },
+  {
+    "description": "Add codesy to BetaData issues?",
+    "type": "bool",
+    "name": "addTo_BetaData_org_h",
+    "value": true,
+    "title": "Enable BetaData"
+  },
+  {
+    "description": "Add codesy to Mozilla Forum?",
+    "type": "bool",
+    "name": "addTo_mozilla_org_s_forums",
+    "value": true,
+    "title": "Enable Mozilla Forums"
+  }
+]
 }

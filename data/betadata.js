@@ -1,5 +1,5 @@
 //the codesy form will be appended to a div with this class:
-var targetClass = "discussion-sidebar" ;
+var targetClass = "awesome" ;
 
 //typically no need to edit code below here, unless this site has special needs
 var codesyDomain = self.options.codesyDomain,

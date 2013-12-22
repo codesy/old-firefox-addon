@@ -17,9 +17,24 @@
 
   "preferences": [{
     "name": "domain",
-    "type": "string",
-    "title": "Domain",
-    "description": "The domain for the codesy back-end service.",
-    "value": "api.codesy.io"
-  }]
+    "type": "menulist",
+    "title": "Choose a codesy server:",
+    "description": "",
+    "value": "api.codesy.io",
+    "options": [
+            {
+                "value": "api.codesy.io",
+                "label": "api.codesy.io"
+            },
+            {
+                "value": "codesy-stage.herokuapp.com",
+                "label": "codesy-stage.herokuapp.com"
+            },
+            {
+                "value": "codesy-dev.herokuapp.com",
+                "label": "codesy-dev.herokuapp.com"
+            }
+        ]
+    }
+  ]
 }

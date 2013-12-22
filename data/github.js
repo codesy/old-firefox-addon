@@ -1,16 +1,16 @@
 var codesyDomain = self.options.codesyDomain,
     codesyImgUrl = self.options.codesyImgUrl;
-
+    debugger;
 // Call to get the CSRF token - we'll need it for POSTing
 $.ajax({
   url: "https://" + codesyDomain + "/api/v1/csrf_token.json"
 }).done(function(data) {
-  console.log("$.ajax successful.");
+  console.log("CODESY $.ajax successful.");
   console.log(data);
 
   appendForm(codesyImgUrl, codesyDomain, data.csrf_token);
 }).fail(function(data) {
-  console.log("$.ajax failed.");
+  console.log("CODESY $.ajax failed.");
   console.log(data);
 });
 

@@ -11,10 +11,13 @@ Getting Started with Development
 2. [Install the Firefox Add-on SDK](https://addons.mozilla.org/developers/docs/sdk/latest/dev-guide/tutorials/installation.html) to get the SDK Virtual Environment
 3. Fiddle with the code
 4. Run `cfx run` to run an instance of Firefox with your code changes
-5. Get the extension auto-installer: https://addons.mozilla.org/en-US/firefox/addon/autoinstaller/
-6. In a second terminal tab, in the working copy of the addon, do this: 
-while true ; do cfx xpi ; wget --post-file=codesy.xpi http://localhost:8888/ ; sleep 5 ; done
-7. Now your changes will post to your running instance of cfx every five seconds.
+
+Because cfx run restarts the browser each time you invoke it, it can be a little cumbersome if you are making very frequent changes to an add-on. So, you may also want to do this:
+
+5. Get the [Extension Auto-Installer](https://addons.mozilla.org/en-US/firefox/addon/autoinstaller/)
+6. In a second terminal tab, in the working copy of the addon, do this: `while true ; do cfx xpi ; wget --post-file=codesy.xpi http://localhost:8888/ ; sleep 5 ; done`
+
+Now your changes will post to your Firefox browser every five seconds. Check the [MDN article on developing without cfx run](https://developer.mozilla.org/en-US/Add-ons/SDK/Tutorials/Getting_Started_With_cfx#Developing_without_cfx_run) for more.
 
 Developing with codesy.io
 -------------------------
